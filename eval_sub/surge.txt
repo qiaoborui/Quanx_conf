@@ -1,0 +1,11 @@
+hostname=app.bilibili.com,nc.cli.im,vsco.co,api.bilibili.com,data.bilibili.com,api.zhihu.com
+
+http-response ^https://app.bilibili.com/x/resource/show/tab\?access_key requires-body=1,script-path=eval_script.js
+
+http-response ^https://api.bilibili.com/x/emote/user/panel(.*?)$ requires-body=1,script-path=eval_script.js
+
+http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,script-path=eval_script.js
+
+http-response ^https://nc.cli.im/qrcoderoute/qrcodeRoute requires-body=1,script-path=eval_script.js
+
+http-response ^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) requires-body=1,script-path=eval_script.js
