@@ -1,4 +1,4 @@
-hostname = app.bilibili.com, nc.cli.im, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com, vsco.co, api.termius.com, api-hdcj.9w9.com, api.bilibili.com, data.bilibili.com
+hostname = app.bilibili.com, nc.cli.im, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com, vsco.co, api.termius.com, api-hdcj.9w9.com, api.bilibili.com, data.bilibili.com, api.zhihu.com
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header JD_DailyBonus.js
 ^https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body bilibiliTab.js
 ^https://api.bilibili.com/x/emote/user/panel(.*?)$ url script-response-body bilikey.js
@@ -17,3 +17,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 ^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
 ^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
 ^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
+^https:\/\/api\.zhihu\.com\/answers\/.*\/comments\/featured-comment url reject-img
+^https:\/\/api\.zhihu\.com\/appview\/api\/v4\/answers\/.*\/recommendations url reject-img
+^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/0x01-0xff/ProxyConf/master/js/ZhiHu_All.js
