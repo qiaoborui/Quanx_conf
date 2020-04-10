@@ -61,7 +61,7 @@ var stop = 0; //自定义延迟签到,单位毫秒,(如填200则每个接口延�
 var $nobyda = nobyda();
 
 //  填此处↓↓↓
-var Key = '__jd_ref_cls=JDReact_StartReactModule; mba_muid=1584200007766540864258; mba_sid=1584200007769173618412103018.10; __jda=122270672.1584200007766540864258.1584200007.1584200007.1584200007.1; __jdb=122270672.10.1584200007766540864258|1.1584200007; __jdc=122270672; mobilev=html5; TrackerID=DxjNG-zBZpZc1IMh-P7HG546VeI2Y5i3wa_OiqaCrTvdgvJINtdJDoYwV3VoEtSNQRIVIcYYIsmGw64cnlkzclK9_E_zjCSrVuPsuw7VMxvGKS6Xfq3LBns56PuwazOrDPii-QaBnabTj8qAtePqZg; pt_key=AAJebPnwADBBDb74thtgKgOj2WlzmWMpxzbLqXAMK4FKY_TPg8Y20H7_JCbzSYly_ZU5mQJ3CQA; pt_pin=jd_6176b3032ddad; pt_token=rvneo5xu; pwdt_id=jd_6176b3032ddad; shshshfpa=b30d69dd-448e-2e7f-16ff-d88149062ced-1584200030; shshshfpb=m4zib0jo7lswmI7wXc2YMJg%3D%3D; whwswswws=; jcap_dvzw_fp=75a1544e8c7e9b892e2677c82433fe6b$694640863894; 3AB9D23F7A4B3C9B=HZLC4SSGM2KL5NY7CEZJBUJMHGBJ4NVVGDKOQM2JZWGS33XQSV5NXR3DWYEBFOW5WEFDZS2BV37HMTOIVXMSRLZTSA; shshshfp=ddf54832896d4fa89e742a9072cb18c9; shshshsID=81e5d69fd9ff61777e394faf1639f07c_5_1584200147298; __jdv=122270672%7Cdirect%7C-%7Cnone%7C-%7C1584200007766'; //如果使用JSBox或Node.js, 单引号内自行填写您抓取的Cookie.
+var Key = ''; //如果使用JSBox或Node.js, 单引号内自行填写您抓取的Cookie.
 
 var KEY = Key?Key:$nobyda.read("CookieJD")
 async function all() {//签到模块相互独立,您可注释某一行以禁用某个接口.
