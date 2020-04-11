@@ -1,4 +1,4 @@
-hostname=app.bilibili.com,nc.cli.im,vsco.co,api.bilibili.com,data.bilibili.com,api.zhihu.com,api.termius.com,api.m.jd.com,app-api.pixiv.net
+hostname=app.bilibili.com,nc.cli.im,vsco.co,api.bilibili.com,data.bilibili.com,api.zhihu.com,api.termius.com,api.m.jd.com
 
 ^https://app.bilibili.com/x/resource/show/tab\?access_key url script-response-body eval_script.js
 
@@ -13,5 +13,3 @@ hostname=app.bilibili.com,nc.cli.im,vsco.co,api.bilibili.com,data.bilibili.com,a
 ^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account url script-response-body eval_script.js
 
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header eval_script.js
-
-^https://app-api.pixiv.net/v1/search.*popular url script-request-header eval_script.js
