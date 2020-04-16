@@ -1,3 +1,3 @@
 [Script]
 hostname = app.bilibili.com
-http-response https://app.bilibili.com/x/resource/show/tab\?access_key script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/bilibili.js, requires-body=true, timeout=10, tag=BililiTab
+http-response https://app.bilibili.com/x/resource/show/tab\?access_key script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/bili_loon.js, requires-body=true, timeout=10, tag=BililiTab
