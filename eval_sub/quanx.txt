@@ -17,3 +17,5 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body eval_script.js
 
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body eval_script.js
+
+^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body eval_script.js
