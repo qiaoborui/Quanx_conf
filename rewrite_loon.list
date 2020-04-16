@@ -8,4 +8,4 @@ http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean scri
 #pixiv
 http-response https://oauth.secure.pixiv.net/auth/token script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/pixiv.js, requires-body=true, timeout=10, tag=pixiv
 #slivertocoin
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/slivertocoin.js
+#cron "5 0 * * *" script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/slivertocoin.js
