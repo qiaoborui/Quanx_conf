@@ -5,7 +5,7 @@ res.account = {
   user_type: "Premium",
   current_period: {
     from: "2020-03-08T04:56:22",
-    until: "2030-03-22T04:56:22"
+    until: "2030-03-24T04:56:22"
   }
 };
 res.trial = null
