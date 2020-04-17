@@ -4,9 +4,9 @@ var headers = {"Content-Type": "application/x-www-form-urlencoded","User-Agent":
 var myRequest = {
     url: url,
     headers:headers,
-    method: method, // Optional, default GET.
 };
-$httpClient.post(myRequest,function(response,data){
+console.log(myRequest);
+$httpClient.post(myRequest,function(error,response,data){
+    console.log(data)
     var msg = JSON.parse(data).msg;
-    $notification.post("银瓜子换硬币📺",msg,"")
-});
+    $notification.post("银瓜子换硬币📺",msg,"")})
