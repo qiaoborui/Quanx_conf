@@ -1,3 +1,4 @@
+#自用
 [Script]
 hostname = app.bilibili.com,api.m.jd.com,oauth.secure.pixiv.net,education.github.com
 http-response https://app.bilibili.com/x/resource/show/tab\?access_key script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/Loon_script/bili_loon.js, requires-body=true, timeout=10, tag=BililiTab
