@@ -1,12 +1,6 @@
-const res = JSON.parse($response.body);
-res.account = {
-  ...res.account,
-  plan_type: "Premium",
-  user_type: "Premium",
-  current_period: {
-    from: "2020-03-08T04:56:22",
-    until: "2030-03-24T04:56:22"
-  }
-};
-res.trial = null
-$done(JSON.stringify(res));
+let obj=JSON.parse($response.body)
+obj.account["pro_mode"] = true;
+obj.account["plan_type"] = "Premium";
+obj.account["user_type"] = "Premium";
+obj.account["current_period"]["until"] = "2099-10-10T03:27:34";
+$done({body:JSON.stringify(obj)})
