@@ -1,5 +1,5 @@
 #Quantumult X #
-hostname=education.github.com, api.zhihu.com
+hostname=education.github.com, api.zhihu.com, duckduckgo.com
 ^http://(www.)?g.cn url 302 https://www.google.com
 ^http://(www.)?google.cn url 302 https://www.google.com
 ^https:\/\/api\.zhihu\.com\/answers\/.*\/comments\/featured-comment url reject-img
