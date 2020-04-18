@@ -1,6 +1,6 @@
 #自用
 [Script]
-hostname = app.bilibili.com,api.m.jd.com,oauth.secure.pixiv.net,education.github.com,api.termius.com
+hostname = app.bilibili.com,api.m.jd.com,oauth.secure.pixiv.net,education.github.com,api.termius.com,api.zhihu.com
 http-response https://app.bilibili.com/x/resource/show/tab\?access_key script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/Loon_script/bili_loon.js, requires-body=true, timeout=10, tag=BililiTab
 cron "*/10 * * * *" script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/testflight.js
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/JD_DailyBonus.js, tag=JD_DailyBonus.js
@@ -14,3 +14,4 @@ http-response ^https:\/\/education\.github\.com\/api\/user$ requires-body=1,max-
 http-response https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/termius.js,tag=Termius
 #sliver
 cron "45 1 0 * * *" script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/Loon_script/slivertocoin.js,tag=瓜子转硬币
+http-response https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/ZhiHu_All.js,tag=Zhihu
