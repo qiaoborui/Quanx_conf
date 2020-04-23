@@ -280,6 +280,6 @@ host-suffix,jianshu.io,direct
 host-suffix,jianshuapi.com,direct
 host-suffix,soundcloud.com,proxy
 host-suffix,sndcdn.com,proxy
-host-keyword lncldglobal proxy
+host-keyword,lncldglobal,proxy
 host-suffix,outlook.com,direct
 geoip, cn, direct
