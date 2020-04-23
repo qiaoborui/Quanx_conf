@@ -12,7 +12,7 @@ $task.fetch(myRequest).then(response => {
     console.log(response.body);
     var result = JSON.parse(response.body)
     var msg = result.msg
-    $notify("银瓜子自动换硬币","",msg); // Success!
+    $notify("📺银瓜子自动换硬币","",msg); // Success!
 }, reason => {
     // reason.error
     $notify("Title", "Subtitle", reason.error); // Error!
