@@ -218,9 +218,6 @@ host-suffix,fabric.io,proxy
 host-suffix,flickr.com,proxy
 host-suffix,fastly.net,proxy
 host-suffix,ggpht.com,proxy
-host-suffix,github.com,proxy
-host-suffix,github.io,proxy
-host-suffix,githubusercontent.com,proxy
 host-suffix,golang.org,proxy
 host-suffix,goo.gl,proxy
 host-suffix,gstatic.com,proxy
