@@ -5,6 +5,6 @@ hostname = app.bilibili.com, nc.cli.im, vsco.co, api.bilibili.com, data.bilibili
 ^https://nc.cli.im/qrcoderoute/qrcodeRoute url script-response-body view.js
 #^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body ZhiHu_All.js
 ^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account url script-response-body termius.js
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header JD_DailyBonus.js
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 #^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.js
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body draft.js
