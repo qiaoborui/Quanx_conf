@@ -13,5 +13,4 @@ hostname=education.github.com, duckduckgo.com, app.bilibili.com, nc.cli.im, vsco
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body vsco.js
 ^https://nc.cli.im/qrcoderoute/qrcodeRoute url script-response-body view.js
 ^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account url script-response-body termius.js
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header JD_DailyBonus.js
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body draft.js
