@@ -1,11 +1,6 @@
-hostname = api.bilibili.com, app.bilibili.com, vsco.co,  *.zhihu.com, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getdrafts.com, duckduckgo.com
+hostname = api.bilibili.com, app.bilibili.com, vsco.co,  *.zhihu.com, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getdrafts.com
 ^http://(www.)?g.cn url 302 https://www.google.com
 ^http://(www.)?google.cn url 302 https://www.google.com
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+  url 302 https://github.com/search?q=$1
-^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
-^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ url 302 http://dict.youdao.com/search?q=$1
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/vsco.js
 #^https:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|v\d\/questions|market\/header|people\/) url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/ZhiHu_All.js
 ^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/termius.js
