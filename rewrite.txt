@@ -1,3 +1,4 @@
+#rewrite
 hostname = api.bilibili.com, app.bilibili.com, vsco.co,  *.zhihu.com, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getdrafts.com
 ^http://(www.)?g.cn url 302 https://www.google.com
 ^http://(www.)?google.cn url 302 https://www.google.com
