@@ -1,5 +1,5 @@
 #rewrite
-hostname = vsco.co, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getdrafts.com
+hostname = vsco.co, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getdrafts.com, www.google.cn
 ^http://(www.)?g.cn url 302 https://www.google.com
 ^http://(www.)?google.cn url 302 https://www.google.com
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/vsco.js
@@ -7,3 +7,5 @@ hostname = vsco.co, api.termius.com, api.m.jd.com, api.getmimo.com, backend.getd
 ^https?:\/\/api\.termius\.com\/api\/v3\/bulk\/account url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/termius.js
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body https://raw.githubusercontent.com/qiaoborui/Quanx_conf/master/script/draft.js
+^https?:\/\/(www.)?g\.cn url 302 https:\/\/www.google.com
+^https?:\/\/(www.)?google\.cn url 302 https:\/\/www.google.com
