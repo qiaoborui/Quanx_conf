@@ -1,14 +1,15 @@
 # > Apple
-DOMAIN-SUFFIX,aaplimg.com,Apple
-DOMAIN-SUFFIX,apple.co,Apple
-DOMAIN-SUFFIX,apple.com,Apple
-DOMAIN-SUFFIX,apple-cloudkit.com,Apple
-DOMAIN-SUFFIX,appstore.com,Apple
-DOMAIN-SUFFIX,cdn-apple.com,Apple
-DOMAIN-SUFFIX,crashlytics.com,Apple
-DOMAIN-SUFFIX,icloud.com,Apple
-DOMAIN-SUFFIX,icloud-content.com,Apple
-DOMAIN-SUFFIX,me.com,Apple
-DOMAIN-SUFFIX,mzstatic.com,Apple
-DOMAIN,www-cdn.icloud.com.akadns.net,Apple
-IP-CIDR,17.0.0.0/8,Apple
+host-suffix, audio.itunes.apple.com, Apple
+host-suffix,aaplimg.com,Apple
+host-suffix,apple.co,Apple
+host-suffix,apple.com,Apple
+host-suffix,apple-cloudkit.com,Apple
+host-suffix,appstore.com,Apple
+host-suffix,cdn-apple.com,Apple
+host-suffix,crashlytics.com,Apple
+host-suffix,icloud.com,Apple
+host-suffix,icloud-content.com,Apple
+host-suffix,me.com,Apple
+host-suffix,mzstatic.com,Apple
+host,www-cdn.icloud.com.akadns.net,Apple
+ip-cidr,17.0.0.0/8,Apple
