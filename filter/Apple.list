@@ -1,5 +1,6 @@
 # > Apple
 host-suffix, audio.itunes.apple.com, Apple
+host-suffix, blobstore.apple.com, Apple
 host-suffix,aaplimg.com,Apple
 host-suffix,apple.co,Apple
 host-suffix,apple.com,Apple
