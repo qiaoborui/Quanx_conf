@@ -1,0 +1,11 @@
+#rewrite
+hostname = www.google.cn, trade-acs.m.taobao.com, ads.mopub.com, sub.store, api.m.jd.com
+^http://(www.)?g.cn url 302 https://www.google.com
+^http://(www.)?google.cn url 302 https://www.google.com
+^https?:\/\/(www.)?g\.cn url 302 https:\/\/www.google.com
+^https?:\/\/(www.)?google\.cn url 302 https:\/\/www.google.com
+^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+^https?:\/\/sub\.store url script-analyze-echo-response https://github.com/Peng-YM/Sub-Store/raw/master/backend/sub-store.js
+^https://ads.mopub.com/m/ad url reject-dict
